@@ -941,7 +941,7 @@ __git_clone_and_checkout() {
             git pull --rebase || return 1
         fi
     else
-        git clone git://github.com/saltstack/salt.git || return 1
+        git clone git://github.com/jmagnusson/salt.git || return 1
         cd $SALT_GIT_CHECKOUT_DIR
         git checkout $GIT_REV || return 1
     fi
